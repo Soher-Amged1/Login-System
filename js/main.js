@@ -38,6 +38,10 @@ function signup(){
                 accountList.push(person)
                 localStorage.setItem("datalist",JSON.stringify(accountList)) 
                 document.querySelector("#Exist").style.display="none";
+                document.querySelector("#logname").value=""
+                document.querySelector("#logemail").value=""
+                document.querySelector("#logpassword").value=""
+
                    }
  else {
     document.querySelector("#Exist").style.display="block";
@@ -82,8 +86,6 @@ function LogIn(){
                     let a = document.querySelector("#welcome");
                     a.setAttribute("href", "welcome.html");
                    document.querySelector("#wrong").style.display="none";
-                
-
         
             }}
             if (count == 0){
