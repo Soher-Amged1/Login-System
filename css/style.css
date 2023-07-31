@@ -1,0 +1,30 @@
+body{
+    background: #24353f;
+    font-family: 'Titillium Web', sans-serif;
+}
+h2{
+    color: #17a2b8;
+}
+.logbox{
+box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+input{
+    background-color: transparent !important;
+    color: #fff !important;
+}
+input::placeholder,
+textarea::placeholder {
+    color: rgb(182, 182, 182) !important;
+}
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 0 0 transparent !important;
+}
+.navbar-dark .navbar-toggler {
+    color: rgba(255, 255, 255, 0.5);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+.navbar-nav .nav-link {
+    border: 1px solid#ffc107;
+
+}

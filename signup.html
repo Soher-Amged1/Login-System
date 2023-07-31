@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container text-center my-5">
+        <div class="logbox p-5 w-75 m-auto text-white">
+            <h2 class="text-center p-5">Smart Login System</h2>
+            <input id="logname"class="form-control my-3" placeholder="Enter your name" type="text">
+            <input id="logemail"class="form-control my-3" placeholder="Enter your email" type="text">
+            <input id="logpassword"class="form-control my-3" placeholder="Enter your password" type="password">
+            <p class="text-danger m-3" style="display: none;"id="required">All inputs is required</p>
+            <div id="checkout" style="display: none;">
+                <p class="text-danger m-3" style="display: none;"id="notchecked">Name must contain at least 3 characters</p>
+                <p>Email must be a valid one</p>
+                <p>password must contain at least eight characters, at least one number and both lower and uppercase letters and special characters</p>
+            </div>
+            <p class="text-danger m-3" style="display: none;"id="Exist">Account Exist</p>
+            <button onclick="IsnullSignUp()" class="btn btn-outline-info my-3 w-100">SignUp</button>
+        <p>You have an account? <a id="gosign" class="text-white text-decoration-none" href="index.html">Signin</a></p>
+
+        </div>
+       </div>
+         
+    <script src="js/main.js"></script>
+</body>
+
+</html>
