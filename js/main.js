@@ -37,10 +37,10 @@ function signup(){
             if (count == 0){
                 accountList.push(person)
                 localStorage.setItem("datalist",JSON.stringify(accountList)) 
-                document.querySelector("#Exist").style.display="none";
                 document.querySelector("#logname").value=""
                 document.querySelector("#logemail").value=""
                 document.querySelector("#logpassword").value=""
+                document.querySelector("#Exist").style.display="none"
 
                    }
  else {
